@@ -1,4 +1,4 @@
-# 🏥 Multilingual Medical Support Chatbot
+# Multilingual Medical Support Chatbot
 
 ---
 
@@ -20,7 +20,7 @@ The chatbot:
 
 ---
 
-## 🛠️ Things Used (Tech Stack)
+## 🛠️ Tech Stack
 
 | Component | Tool / Library |
 |---|---|
@@ -36,6 +36,8 @@ The chatbot:
 ---
 
 ## 🗂️ Project Structure
+
+```
 multilingual-medical-chatbot/
 │
 ├── app.py → Main Streamlit app
@@ -45,7 +47,7 @@ multilingual-medical-chatbot/
 ├── utils.py → Helper functions
 ├── requirements.txt → Dependencies
 └── README.md → Documentation
-
+```
 
 ### Start Chatting!
 - Select your language from the **sidebar**
@@ -71,26 +73,10 @@ multilingual-medical-chatbot/
 
 ---
 
-## 📸 Screenshots
-
-> **Home Screen**
-
-![Home Screen](screenshots/home.png)
-
-> **Tamil Query & Response**
-
-![Tamil Chat](screenshots/tamil_chat.png)
-
-> **Hindi Query & Response**
-
-![Hindi Chat](screenshots/hindi_chat.png)
-
----
-
 ## 👤 Author
 
-**[Your Full Name]**
-- 📧 Email: your.email@example.com
+**ABISHEK RAJA A**
+- 📧 Email: abishekraja04121998@gmail.com
 
 ---
 
@@ -99,4 +85,3 @@ multilingual-medical-chatbot/
 - [Hugging Face](https://huggingface.co) — AI Models
 - [Streamlit](https://streamlit.io) — Web Framework
 - [deep-translator](https://github.com/nidhaloff/deep-translator) — Translation
-- [HCL GUVI](https://guvi.in) — Data Science Program
