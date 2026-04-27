@@ -1,54 +1,47 @@
 """
 Translation module using deep-translator (Google Translate).
-Supports Tamil, Hindi, French, Spanish and 100+ languages.
-No model download required.
+Handles language detection and bidirectional translation.
 """
 
-from langdetect import detect
 from deep_translator import GoogleTranslator
+from langdetect import detect
+import streamlit as st
+from language_config import SUPPORTED_LANGUAGES
 
 
 def detect_language(text: str) -> str:
     """
-    Detects the language of input text.
-    Returns language code like 'ta', 'hi', 'en', 'fr'.
+    Detects the language of the input text automatically.
+    Returns language code like 'ta', 'hi', 'fr', 'en'
     """
     try:
         return detect(text)
     except Exception:
-        return "en"
-
-
-def translate_text(text: str, src_lang: str, tgt_lang: str) -> str:
-    """
-    Translates text from source to target language using Google Translate.
-    
-    Args:
-        text: Text to translate
-        src_lang: Source language code (e.g., 'ta', 'hi')
-        tgt_lang: Target language code (e.g., 'en')
-    
-    Returns:
-        str: Translated text
-    """
-    if src_lang == tgt_lang:
-        return text
-    try:
-        translated = GoogleTranslator(source=src_lang, target=tgt_lang).translate(text)
-        return translated
-    except Exception as e:
-        return f"[Translation failed: {str(e)}]"
+        return "en"  # Default to English if detection fails
 
 
 def translate_to_english(text: str, src_lang: str) -> str:
-    """Translates any language to English."""
+    """
+    Translates any language text to English.
+    Uses 'auto' detection if source language is unknown.
+    """
     if src_lang == "en":
         return text
-    return translate_text(text, src_lang, "en")
+    try:
+        translated = GoogleTranslator(source="auto", target="en").translate(text)
+        return translated
+    except Exception as e:
+        return text  # Return original text if translation fails
 
 
 def translate_from_english(text: str, tgt_lang: str) -> str:
-    """Translates English text back to target language."""
+    """
+    Translates English text to the target language.
+    """
     if tgt_lang == "en":
         return text
-    return translate_text(text, "en", tgt_lang)
+    try:
+        translated = GoogleTranslator(source="en", target=tgt_lang).translate(text)
+        return translated
+    except Exception as e:
+        return text  # Return original English if translation fails
