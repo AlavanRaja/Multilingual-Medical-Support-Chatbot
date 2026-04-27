@@ -27,7 +27,7 @@ The chatbot:
 | Web Framework | Streamlit |
 | Language Detection | langdetect |
 | Translation | deep-translator (Google Translate) |
-| Medical AI Model | google/flan-t5-small (Hugging Face) |
+| Medical AI Model | Meta LLaMA 3.1 8B (Groq API) |
 | ML Framework | PyTorch |
 | Version Control | Git & GitHub |
 | Language | Python 3.13 |
@@ -83,21 +83,21 @@ multilingual-medical-chatbot/
 
 
 > **English Query & Response**
-<img width="529" height="248" alt="image" src="https://github.com/user-attachments/assets/2c6c12d9-5f89-466e-bd51-77dca1e692a8" />
+<img width="1485" height="375" alt="image" src="https://github.com/user-attachments/assets/8bdb079f-6d98-44ca-ac3f-e0480bbdde50" />
 
 
 ---
 
 
 > **Tamil Query & Response**
-<img width="868" height="248" alt="image" src="https://github.com/user-attachments/assets/40c9c55b-f6e2-455e-9332-8430a6f09dcc" />
+<img width="1494" height="467" alt="image" src="https://github.com/user-attachments/assets/5b5b9138-8e70-4605-9661-e4d0c661a075" />
 
 
 ---
 
 
 > **Hindi Query & Response**
-<img width="587" height="251" alt="image" src="https://github.com/user-attachments/assets/77c27947-84d2-468f-901d-43581746b71a" />
+<img width="1523" height="401" alt="image" src="https://github.com/user-attachments/assets/9afda4f2-107e-475e-9acc-a9089a12a616" />
 
 
 ---
