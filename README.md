@@ -73,6 +73,35 @@ multilingual-medical-chatbot/
 
 ---
 
+## 📸 Screenshots
+
+> **Home Screen**
+<img width="1918" height="906" alt="image" src="https://github.com/user-attachments/assets/0f511fa4-d59f-4c3a-8581-7d6e1fa3b524" />
+
+
+---
+
+
+> **English Query & Response**
+<img width="529" height="248" alt="image" src="https://github.com/user-attachments/assets/2c6c12d9-5f89-466e-bd51-77dca1e692a8" />
+
+
+---
+
+
+> **Tamil Query & Response**
+<img width="868" height="248" alt="image" src="https://github.com/user-attachments/assets/40c9c55b-f6e2-455e-9332-8430a6f09dcc" />
+
+
+---
+
+
+> **Hindi Query & Response**
+<img width="587" height="251" alt="image" src="https://github.com/user-attachments/assets/77c27947-84d2-468f-901d-43581746b71a" />
+
+
+---
+
 ## 👤 Author
 
 **ABISHEK RAJA A**
